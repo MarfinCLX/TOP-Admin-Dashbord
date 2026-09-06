@@ -1,5 +1,77 @@
-* {
+@font-face {
+    font-family: "Roboto-Italic";
+    src: url(fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf)  format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf)  format("opentype");
+}
+
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+svg {
+    width: 45px;
+    height: 45px;
+}
+
+.left-side-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #39abf7;
+    width: 400px;
+    height: 100%;
+    padding: 15px 40px 20px 15px;
+    letter-spacing: 0.5px;
+}
+
+.header-left-side {
+    padding-bottom: 40px;
+}
+
+.svg-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.svg-text {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #fef;
+    font-size: 23px;
+}
+
+.svg-text:not(.dashboard-text) {
+    padding-left: 25px;
+}
+
+.settings-svg, .messages-svg, .home-svg, .dashboard-svg {
+    fill: #fff;
+}
+
+.dashboard-svg {
+    width: 80px;
+    height: 80px;
+}
+
+.dashboard-text {
+    padding-left: 11px;
+    font-size: 37px;
+}
+
+.messages-svg {
+    transform: rotateY(190deg);
+}
+
+.main-left-side {
+    padding-bottom: 60px;
 }
